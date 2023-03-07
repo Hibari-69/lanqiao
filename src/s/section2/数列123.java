@@ -36,7 +36,7 @@ public class 数列123 {
             if(f(mid)<x)
                 l=mid+1;
             else
-                r=mid;
+                r=mid;   //r=mid 上面不用+1  l=mid 要+1
         }
         r--;//求得前面块
         x -=f(r);//当前块的位置
@@ -46,6 +46,7 @@ public class 数列123 {
 
     //求出[1,n] 的值;
     private static long f(long x){
+
         return (1L+x)*x/2;  //等差数列求和
     }
 
