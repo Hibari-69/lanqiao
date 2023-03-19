@@ -29,6 +29,8 @@ public class 数列123 {
     }
 
     //用二分求给 出的 l r 分别在第几个块中;
+
+    //java 自带二分 binarySearch..
     private static long slove(long x){
         int l=1,r=1500000;
         while(l<r){

@@ -8,6 +8,12 @@ import java.util.Set;
 public class 字符串一些基操 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+        //简单加密
+        String ming="abcdefghijklmnopqrstuvwxyz";
+        String anwe="defghijklmnopqrstuvwxyzabc";
+        for (int i = 0; i < ming.length(); i++) {
+
+        }
         while(sc.hasNext()){
 //            String id=sc.next();
 //            char pos17=id.charAt(16);//第十七位数字

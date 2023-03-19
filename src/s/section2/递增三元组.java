@@ -38,30 +38,41 @@ public class 递增三元组 {
         //枚举b[]
         //二分了两次 复杂度 nlognlongn nlong^2
         for(int i=0;i<k;++i){
-            //在a中二分
-            int l=0,r=k-1;
+            //在a中二分  //取上界，满足条件的最大值
+            int l=0,r=k;
             while(l<r){
                 int mid=l+r+1>>1;
                 if(a[mid]<b[i])l=mid;
                 else r=mid-1;           //这里mid+1,mid-1 有点懵
                                         //如果需要l=mid mid=l+r+1;
+                System.out.print(mid+" ");
             }
-
-            //在b中二分
+            System.out.println();
+            System.out.println(r);
+            
+            //在b中二分 //取下界，满足条件的最小值
             int t=r;
             l=0;
-            r=k-1;
+            r=k;
             while(l<r){
                 int mid=l+r>>1;
                 if(c[mid]>b[i])r=mid;
                 else l=mid+1;
+                System.out.print(mid+"   ");
+
             }
+            System.out.println();
+            System.out.println(r);
+            System.out.println();
 
             //最后判断是否符合要求
-            if(a[t]<b[i]&&c[r]>b[i])cnt+=(long) (t+1)*(k-r);
+            if(a[t]<b[i]&&c[r]>b[i])
+
+                cnt+=(long) (t+1)*(k-r);
 
         }
 
+        System.out.println();
         out.println(cnt);
         out.flush();
     }

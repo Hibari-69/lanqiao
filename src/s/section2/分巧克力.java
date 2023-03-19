@@ -25,6 +25,7 @@ public class 分巧克力 {
             if(check(arr,mid,K))l=mid;  //这里就是二分模板 ;l=mid 因为在左边符合要求，mid 还是要取 就还是
             else r=mid-1;
         }
+
         System.out.println(l);
     }
     static boolean check(int[][] arr,int X,int K){
