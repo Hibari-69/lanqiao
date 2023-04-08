@@ -50,6 +50,13 @@ public class 字符串一些基操 {
 
             // the quick brown fox jumps over the lazy dog
 
+            //Arrays.sort();也是可以排列字母字符的哦~
+//            String s="WHERETHEREISAWILLTHEREISAWAY";
+//            char[] a=s.toCharArray();
+//            Arrays.sort(a);
+//            s=new String(a);
+//            System.out.println("AAAEEEEEEHHHIIILLRRRSSTTWWWY");
+
 
 
 

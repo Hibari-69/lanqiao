@@ -1,5 +1,7 @@
 package s.section2;
 
+import java.util.Arrays;
+
 public class fib打个表 {
 
     //fib 64项超过int fib 93项超过long(大概)
@@ -17,6 +19,7 @@ public class fib打个表 {
             if(fib[i]%4==0) System.out.printf("\t被4整除");
             if(fib[i]%12==0) System.out.printf("\t被12整除");
             System.out.println();
+
 
         }
 
